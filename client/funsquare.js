@@ -1,4 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
+import css from './styles/main.styl';
+import App from './components/App';
 
-render(<p>hello funsquare</p>, document.getElementById('root'));
+render(<App />, document.getElementById('root'));
