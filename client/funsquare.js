@@ -10,8 +10,13 @@ import { Router, Route, IndexRoute, browserHistory} from 'react-router';
 const router = (
   <Router history={browserHistory}>
     <Route path="/" component={App}>
-      <Route path="/view/:queryId" component={Single}></Route>
-      <Route path="/contact" component={ContactPage}></Route>
+      <IndexRoute component={Main}/>
+    </Route>
+    <Route path="/contact" component={ContactPage}>
+      <IndexRoute component={Main}/>
+    </Route>
+    <Route path="/view/:queryId" component={Single}>
+      <IndexRoute component={Main}/>
     </Route>
   </Router>
 );

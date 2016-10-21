@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import TextField from 'material-ui/TextField';
 
 const SearchForm = React.createClass({
   render() {

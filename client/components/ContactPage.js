@@ -4,6 +4,7 @@ const contactInfo = React.createClass({
   render() {
     return (
       <div>
+        {this.props.children}
         <h4>Author:</h4>
         <p>Name: Victor Vyshnevskyi</p>
         <p>Github: https://github.com/heaks/</p>

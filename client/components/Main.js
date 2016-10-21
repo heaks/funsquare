@@ -8,6 +8,7 @@ const Main = React.createClass({
         <h1 className="header">
           <Link to="/">FunSquare</Link>
         </h1>
+        {this.props.children}
       </div>
     )
   }

@@ -4,6 +4,7 @@ const Single = React.createClass({
   render() {
     return(
       <div>
+        {this.props.children}
         I'm the single
       </div>
     )
