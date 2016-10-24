@@ -1,4 +1,5 @@
 export function addComment(author = 'Anonymous', comment) {
+  console.log('dispatching a comment');
   return {
     type: 'ADD_COMMENT',
     author,
@@ -6,10 +7,10 @@ export function addComment(author = 'Anonymous', comment) {
   }
 }
 
-export function removeComment(commentId) {
+export function removeComment(index) {
   return {
     type: 'REMOVE_COMMENT',
-    commentId
+    index
   }
 }
 

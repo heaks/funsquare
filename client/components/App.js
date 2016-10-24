@@ -10,6 +10,9 @@ import Col from 'muicss/lib/react/col';
 
 class App extends React.Component {
   render() {
+    console.log('APP props: ', this.props);
+    const allComments = this.props.comments;
+    console.log('allComments: ', allComments);
     return (
       <Container fluid={true}>
         <Row>
@@ -24,7 +27,7 @@ class App extends React.Component {
           </Col>
           <Col md="4">
             <div className="comment-section">
-              <Comments/>
+              <Comments comments={allComments} {...this.props}/>
             </div>
           </Col>
         </Row>
